@@ -59,15 +59,19 @@ class Log {
     int? backColor,
     String? tag,
   }) {
-    defaultLogger.custom(object, foreColor: foreColor, backColor: backColor, tag: tag!);
+    defaultLogger.custom(object, foreColor: foreColor, backColor: backColor, tag: tag);
   }
 
-  static void c(Object object, int color) {
-    defaultLogger.custom(object, foreColor: color);
+  static void c(
+    Object object,
+    int color, {
+    String? tag,
+  }) {
+    defaultLogger.custom(object, foreColor: color, tag: tag);
   }
 
-  static void r(Object? object) {
-    defaultLogger.custom(object, foreColor: Random().nextInt(231));
+  static void r(Object? object, {String? tag}) {
+    defaultLogger.custom(object, foreColor: Random().nextInt(231), tag: tag);
   }
 }
 
