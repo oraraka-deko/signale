@@ -10,7 +10,7 @@ class Log {
   static List<LogEntity> buffer = defaultLogger.buffer;
 
   /// debug log
-  static void d(Object? object, {String? tag}) {
+  static void d(Object? object, [String? tag]) {
     defaultLogger.d(
       object,
       tag: tag,
@@ -18,7 +18,7 @@ class Log {
   }
 
   /// info log
-  static void i(Object? object, {String? tag}) {
+  static void i(Object? object, [String? tag]) {
     defaultLogger.i(
       object,
       tag: tag,
@@ -26,7 +26,7 @@ class Log {
   }
 
   /// warning log
-  static void w(Object? object, {String? tag}) {
+  static void w(Object? object, [String? tag]) {
     defaultLogger.w(
       object,
       tag: tag,
@@ -34,7 +34,7 @@ class Log {
   }
 
   /// verbose log
-  static void v(Object? object, {String? tag}) {
+  static void v(Object? object, [String? tag]) {
     defaultLogger.v(
       object,
       tag: tag,
@@ -42,7 +42,7 @@ class Log {
   }
 
   /// error log
-  static void e(Object? object, {String? tag}) {
+  static void e(Object? object, [String? tag]) {
     defaultLogger.e(
       object,
       tag: tag,
