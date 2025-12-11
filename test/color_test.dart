@@ -18,4 +18,10 @@ void main() {
       print(''); // 每16个颜色换行
     }
   }
+  for (int color = 0; color < 256; color++) {
+    stdout.write('\x1B[38;5;${color}m${color.toString().padLeft(3, ' ')}\x1B[0m ');
+    if (color % 16 == 15) {
+      print(''); // 每16个颜色换行
+    }
+  }
 }
