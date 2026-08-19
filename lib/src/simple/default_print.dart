@@ -1,4 +1,4 @@
-import 'package:signale/src/interface/print_able.dart';
+import '../interface/print_able.dart';
 import 'dart:core' as core;
 import 'dart:core';
 
